@@ -23,7 +23,6 @@ class _HomeState extends State<Home> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
     _init();
@@ -31,7 +30,6 @@ class _HomeState extends State<Home> {
 
   _init() async {
     try {
-      //await player.setAudioSource(AudioSource.uri(Uri.parse("https://s3.amazonaws.com/scifri-episodes/scifri20181123-episode.mp3")));
       var totalTime = await player.setAsset('assets/audio/frequency.mp3');
       print(totalTime);
 
